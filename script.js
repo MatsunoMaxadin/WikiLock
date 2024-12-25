@@ -11,7 +11,7 @@ let minus = 'minus';
 let link = document.getElementById ("link");
 let errado = document.getElementById("errado");
 let perfil = document.getElementById("perfil");
-img.setAttribute('src',`./${pics[i]}`);
+img.setAttribute('src',`${pics[i]}`);
 
 
 function changeIcon(symbol) {
@@ -36,7 +36,7 @@ function changeIcon(symbol) {
         
     };
     
-    img.setAttribute('src',`./${pics[i]}`);
+    img.setAttribute('src',`${pics[i]}`);
      
     
 };
@@ -81,7 +81,7 @@ function log () {
     let emailCheck = document.getElementById("email2").value;
     let senhaCheck = document.getElementById("senha2").value;
     dados = getInfo();
-    perfil.setAttribute('src', `./${dados[3]}`);
+    perfil.setAttribute('src', `${dados[3]}`);
     nick.innerHTML = dados[0];
     
     if (emailCheck === dados[1] && senhaCheck === dados[2]){
