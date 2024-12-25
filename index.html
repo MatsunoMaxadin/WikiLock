@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./log.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  
+    
+    <h1 class="item tit"> WIKI LOCK</h1>
+    
+    
+    <div class="menu container-flex" id="menu">
+      
+      <h1 class="item ques">Bem-Vindo, egoísta!</h1>
+      
+      <button  onclick="changeDisplay(menu, register)" class="item"><span>Cadastrar</span></button>
+      <button onclick="changeDisplay(menu, login)" class="item"><span>Entrar</span></button>
+      
+      
+    </div>
+    
+    <form method="post" class="register container-flex " id="register" autocomplete="off">
+      
+      <h2 class="item cad"> Cadastre-se </h2>
+      
+      <div class="icon">
+      <button type="button"onclick="changeIcon(minus)" id="esq"><span> <-</span></button>
+        <img src=" " alt="Icon" id="img">
+        <button type="button" onclick="changeIcon(plus)" id="dir"><span>-></span></button>
+      </div>
+        <p id="icon"> Escolha seu icon!</p>
+        <div class="labels">
+        <label for ="name">
+          Nome :
+      <input type="text" placeholder=" " class="item no" id="name" autocomplete="off">
+        </label>
+        <label for="email">
+          Email : 
+      <input type="email" placeholder=" " class="item em" id="email" autocomplete="off">
+        </label>
+        <label for=""="senha">
+          Senha : 
+      <input type="password" placeholder=" " class="item sen" id="senha" autocomplete="off">
+        </label>
+        </div>
+      <button type="button" onclick="getInfo(), changeDisplay(register, menu)" class="item but"><span>Cadastrar</span></button>
+      
+      <p class="item ja">Já tem conta? <button type="button" onclick="changeDisplay(register, login)">Login</button></p>
+      
+      
+      
+    </form>
+      
+      
+      <form method="post" autocomplete="off" class="login container-flex" id="login">
+        
+        <h1 class="item entre"> Entre na conta:</h1>
+        <label for="email2">
+          Insira seu Email :
+         <input autocomplete="off" type="email" placeholder=" " class="item email" id="email2">
+        </label>
+        <label for="senha2">
+          Insira sua Senha : 
+        <input autocomplete="off" placeholder=" "  type="password"class="item senha" id="senha2">
+        </label>
+        <button type="button" onclick="log()" class="item button"><a id ="link"> Login </a></button>
+        <p id ="errado"> </p>
+        
+     
+      </form>
+    
+      <div class="welcome container-flex" id="welcome">
+        
+        
+        <h2 class="item ego"> Olá, egoísta!</h2>
+        <img src=' ' alt="icon" id="perfil">
+        <p id="bemvindo">Bem vindo, <span id="nick"></span>!</p>
+        <button id="index"><a href="wiki.html"> Ir para a Wiki</a></button>
+        
+        
+        
+      </div>
+    
+      
+      <script src="./script.js"></script>
+    
+    
+  
+</body>
+</html>

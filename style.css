@@ -1,0 +1,164 @@
+
+
+body{
+  
+  background-color: #1E96FF;
+  
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas: 
+  "header header header"
+  "main main aside"
+  "main main aside"
+  "main main aside"
+  "footer footer footer";
+  
+}
+
+.item {
+  display: flex;
+  border: solid aquamarine 2px;
+  
+  
+}
+
+
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+  "principal principal"
+  "second third";
+  
+  
+  
+}
+
+.header{
+  display: flex;
+  grid-area: header;
+  justify-content: flex-start;
+  align-items: center;
+  height: 300px;
+  
+}
+
+.header > h1 {
+  
+  
+  flex: 0 1 auto;
+  padding: 10px;
+  
+  
+  
+}
+
+.header > img {
+  border: solid black 2px;
+  padding: 0px;
+  margin: 0px;
+  flex: auto;
+  
+  
+  
+}
+
+.aside {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+  
+}
+
+
+
+.footer{
+  
+  grid-area: footer;
+  
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.news > p {
+  
+  background-color: aquamarine;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+.news > img {
+  
+  margin: 0px;
+  padding: 0px;
+  
+  
+}
+.less > img {
+  
+  
+}
+.principal > img {
+  
+  
+  
+}
+
+
+.less {
+  
+  display: flex;
+  border: solid red 2px;
+  
+  
+}
+
+.more {
+  
+  display: flex;
+}
+
+
+
+.principal{
+  
+  grid-area: principal;
+  
+  
+  
+}
+
+.second {
+  
+  grid-area: second;
+  
+  
+}
+.third {
+  
+  grid-area: third
+  
+  
+}
+
+.news {
+  
+  border: solid black 2px;
+}
+
+
+
+
