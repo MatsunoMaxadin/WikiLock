@@ -40,17 +40,18 @@
         </label>
         <label for="email">
           Email : 
-      <input type="email" placeholder=" " class="item em" id="email" autocomplete="off">
+      <input type="email" placeholder=" " class="item em" id="email" autocomplete="off" required>
         </label>
         <label for=""="senha">
           Senha : 
-      <input type="password" placeholder=" " class="item sen" id="senha" autocomplete="off">
+      <input type="password" placeholder=" " class="item sen" id="senha" autocomplete="off" required>
         </label>
         </div>
       <button type="button" onclick="getInfo(), changeDisplay(register, menu)" class="item but"><span>Cadastrar</span></button>
       
       <p class="item ja">Já tem conta? <button type="button" onclick="changeDisplay(register, login)">Login</button></p>
-      
+
+      <p class="erro" id="falta"> </p>
       
       
     </form>
