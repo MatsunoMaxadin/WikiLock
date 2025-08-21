@@ -104,7 +104,7 @@ function log () {
     perfil.setAttribute('src', `./${dados[3]}`);
     nick.innerHTML = dados[0];
 
-    if(emailCheck = "" || senhaCheck = ""){
+    if(emailCheck == "" || senhaCheck == ""){
 
         errado.innerHTML = "ERRO: usuário ou senha inválidos.";
 
