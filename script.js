@@ -103,7 +103,13 @@ function log () {
     dados = getInfo();
     perfil.setAttribute('src', `./${dados[3]}`);
     nick.innerHTML = dados[0];
-    
+
+    if(dados.includes("")){
+
+        errado.innerHTML = "ERRO: usuário não cadastrado.";
+        return;
+
+    }
     if (emailCheck === dados[1] && senhaCheck === dados[2]){
         
         changeDisplay(login, welcome);
