@@ -104,9 +104,9 @@ function log () {
     perfil.setAttribute('src', `./${dados[3]}`);
     nick.innerHTML = dados[0];
 
-    if(dados.includes("")){
+    if(emailCheck = "" || senhaCheck = ""){
 
-        errado.innerHTML = "ERRO: usuário não cadastrado.";
+        errado.innerHTML = "ERRO: usuário ou senha inválidos.";
         return;
 
     }
@@ -116,7 +116,7 @@ function log () {
         
     } else {
         
-        errado.innerHTML = "Dados incorretos";
+        errado.innerHTML = "ERRO: usuário ou senha incorretos.";
         
         
     };
