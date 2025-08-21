@@ -115,9 +115,7 @@ function log () {
         
     };
     
-    console.log(emailCheck);
-    console.log(senhaCheck);
-    console.log(dados);
+   
     
     
     
