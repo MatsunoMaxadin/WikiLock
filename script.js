@@ -107,8 +107,10 @@ function log () {
     if(emailCheck == "" || senhaCheck == ""){
 
         errado.innerHTML = "ERRO: usuário ou senha inválidos.";
+        return;
 
-    } else if (emailCheck === dados[1] && senhaCheck === dados[2]){
+    
+        if (emailCheck === dados[1] && senhaCheck === dados[2]){
         
         changeDisplay(login, welcome);
         
